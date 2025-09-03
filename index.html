@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Interactive Web Page</h1>
+            <p>Explore JavaScript interactivity with these components</p>
+        </header>
+        
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle">Dark Mode</button>
+        
+        <!-- Counter Game Section -->
+        <section class="counter">
+            <h2>Counter Game</h2>
+            <p>Click the buttons to change the counter value</p>
+            <div class="counter-value">0</div>
+            <div class="counter-buttons">
+                <button class="decrement" onclick="decrementCounter()">-</button>
+                <button class="reset" onclick="resetCounter()">Reset</button>
+                <button class="increment" onclick="incrementCounter()">+</button>
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <div class="faq-question">What is JavaScript? <span>+</span></div>
+                <div class="faq-answer">
+                    <p>JavaScript is a programming language that enables interactive web pages. It is an essential part of web applications and is supported by all modern web browsers.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">What are JavaScript events? <span>+</span></div>
+                <div class="faq-answer">
+                    <p>JavaScript events are actions that occur on web pages, such as clicks, mouse movements, keyboard input, and page loading. Developers can write code to respond to these events.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">What is DOM manipulation? <span>+</span></div>
+                <div class="faq-answer">
+                    <p>DOM manipulation refers to using JavaScript to modify the Document Object Model (DOM) of a web page. This allows developers to dynamically change content, styles, and structure without reloading the page.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Form Validation Section -->
+        <section class="form-validation">
+            <h2>Form Validation</h2>
+            <p>Please fill out the form with valid information</p>
+            <form id="validation-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name">
+                    <div class="error" id="name-error">Please enter a valid name (min 2 characters)</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                    <div class="error" id="email-error">Please enter a valid email address</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password">
+                    <div class="error" id="password-error">Password must be at least 8 characters with one uppercase, one lowercase, and one number</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password">
+                    <div class="error" id="confirm-password-error">Passwords do not match</div>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit Form</button>
+            </form>
+            
+            <div class="form-feedback form-success" id="form-success">
+                Form submitted successfully!
+            </div>
+            
+            <div class="form-feedback form-error" id="form-error">
+                Please fix the errors above and try again.
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
